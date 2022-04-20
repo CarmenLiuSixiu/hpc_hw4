@@ -1,0 +1,51 @@
+******Q1*******
+=========================================================
+cuda5.cims.nyu.edu	Two Intel Xeon E5-2650 (2.60 GHz) (16 cores)	Two GeForce GTX TITAN Z (12 GB memory each)
+CPU Bandwidth = 0.001415 GB/s
+GPU Bandwidth = 0.148347 GB/s
+sumError = 0.000000
+=========================================================
+cuda4.cims.nyu.edu	Two Intel Xeon Gold 5118 (2.30 GHz) (48 cores)	Two GeForce GTX TITAN X (12 GB memory each)
+CPU Bandwidth = 0.001628 GB/s
+GPU Bandwidth = 0.236283 GB/s
+sumError = 0.000000
+=========================================================
+cuda3.cims.nyu.edu	Two Intel Xeon Gold 5118 (2.30 GHz) (48 cores)	Two TITAN V (12 GB memory each)
+CPU Bandwidth = 0.002624 GB/s
+GPU Bandwidth = 2.196471 GB/s
+Error = 0.000000
+=========================================================
+cuda2.cims.nyu.edu	Two Intel Xeon E5-2660 (2.60 GHz) (40 cores)	Two GeForce RTX 2080 Ti (11 GB memory each)
+CPU Bandwidth = 0.005362 GB/s
+GPU Bandwidth = 0.406658 GB/s
+sumError = 0.000000
+
+
+*******Q2******* 
+=========================================================
+cuda5.cims.nyu.edu	Two Intel Xeon E5-2650 (2.60 GHz) (16 cores)	Two GeForce GTX TITAN Z (12 GB memory each)
+GPU Bandwidth = 0.683645 GB/s
+Error = 0.000000
+=========================================================
+cuda4.cims.nyu.edu	Two Intel Xeon Gold 5118 (2.30 GHz) (48 cores)	Two GeForce GTX TITAN X (12 GB memory each)
+GPU Bandwidth = 2.950384 GB/s
+Error = 0.000000
+=========================================================
+cuda3.cims.nyu.edu	Two Intel Xeon Gold 5118 (2.30 GHz) (48 cores)	Two TITAN V (12 GB memory each)
+GPU Bandwidth = 2.525365 GB/s
+Error = 0.000000
+=========================================================
+cuda2.cims.nyu.edu	Two Intel Xeon E5-2660 (2.60 GHz) (40 cores)	Two GeForce RTX 2080 Ti (11 GB memory each)
+GPU Bandwidth = 1.008658 GB/s
+Error = 0.000000
+
+
+Q3
+In the CUDA part, we have written the main function and successfully ran cufft. We have also informed ourselves about the mathematical knowledge of the radix-2, 4, and 8 algorithms. 
+Our experiment design is to implement the radix-2 FFT and compare it with the cufft library, running parallel on the CIMS CUDA servers. Similarly, for OpenMP, we will also use the library as a benchmark and implement the corresponding OpenMP version. 
+We are currently working on transferring the cfft2 and step function mentioned in Peterson’s book to the C++ version. Our implementation is non-recursive and is based on the conventional Cooley-Tukey algorithm. 
+
+In the presentation and report, we will go through the algorithms of FFT, especially why the CUDA and OpenMP implementations can expedite the algorithms. 
+
+Our GitHub repository: https://github.com/StevenZhang0116/HPC-FFT.git
+ 
